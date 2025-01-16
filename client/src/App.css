@@ -1,0 +1,155 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #76a2ff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.login,
+.signUp {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.login input,
+.signUp input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login button,
+.signUp button {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover,
+.signUp button:hover {
+  background-color: var(--secondary-color);
+}
+
+.login label,
+.signUp label {
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: var(--border-color);
+}
+
+.square:active {
+  background-color: lightgray;
+}
+
+h4 {
+  font-size: 30px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.joinGame input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 220px;
+  height: 30px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.joinGame button {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 220px;
+  height: 51px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.joinGame button:hover {
+  background-color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #3e8e41;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --border-color: #ccc;
+}
